@@ -135,3 +135,47 @@ img {
 .footer-column a:hover {
     text-decoration: underline; /* Underline on hover */
 }
+header {
+    text-align: center; /* Center align the header content */
+    margin-bottom: 20px; /* Space between header and navigation */
+}
+
+h1 {
+    font-size: 2.5rem; /* Size for the main title */
+    color: var(--primary-color); /* Color defined in CSS variables */
+}
+
+h2 {
+    font-size: 1.5rem; /* Size for the tagline */
+    color: var(--text-color); /* Color defined in CSS variables */
+    margin-bottom: 10px; /* Space below the tagline */
+}
+
+.header-links {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to create multiple rows */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-links li {
+    margin-right: 20px; /* Space between links */
+    margin-bottom: 10px; /* Space between rows */
+}
+
+.header-links a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.header-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-links {
+        flex-direction: column; /* Stack links vertically on smaller screens */
+    }
+}
