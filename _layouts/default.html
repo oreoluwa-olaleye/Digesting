@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | digest.i.ng</title>
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link rel="icon" href="/favicon-16x16.png" type="image/png">
+
+    <!-- Canonical URL for SEO -->
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+    <!-- Meta description for SEO -->
+    <meta name="description" content="Curated insights and concise summaries of the latest news, helping you stay informed with ease and accuracy.">
+
+    <!-- Open Graph meta tags for social sharing -->
+    <meta property="og:title" content="{{ page.title }} | digest.i.ng">
+    <meta property="og:description" content="Curated insights and concise summaries of the latest news, helping you stay informed with ease and accuracy.">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ page.image | absolute_url }}">
+    <meta property="og:site_name" content="digest.i.ng">
+    
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title }} | digest.i.ng">
+    <meta name="twitter:description" content="Curated insights and concise summaries of the latest news, helping you stay informed with ease and accuracy.">
+    <meta name="twitter:image" content="{{ page.image | absolute_url }}">
+
+    <!-- Structured Data using JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "digest.i.ng",
+      "url": "{{ page.url | absolute_url }}",
+      "description": "Curated insights and concise summaries of the latest news, helping you stay informed with ease and accuracy.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Fused-Up Innovations",
+        "url": "https://fui.com.ng"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "{{ page.image | absolute_url }}",
+        "width": 1200,
+        "height": 630
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Insights and Summaries from digest.i.ng</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <p>&copy; {{ site.time | date: "%Y" }} digest.i.ng. All rights reserved.</p>
+        <p>Managed by <a href="https://fui.com.ng">Fused-Up Innovations</a></p>
+        <ul>
+            <li><a href="/cookie-policy.html">Cookie Policy</a></li>
+            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/cookie-subscription.html">Cookie Subscription</a></li>
+        </ul>
+    </footer>
+
+    <!-- Optional: Add cookie consent banner JavaScript -->
+    <script src="/assets/js/cookie-consent.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Add any other scripts here -->
+</body>
+</html>
