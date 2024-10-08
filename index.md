@@ -33,13 +33,6 @@ Discover the latest advancements in technology, gadget reviews, and tech industr
 Stay updated on health tips, medical advancements, and wellness news.
 - **[Explore Health News](/health/)**
 
-### Science
-Get insights into the latest scientific discoveries, research, and innovations.
-- **[Explore Science News](/science/)**
-
-### Environment
-Learn about environmental issues, sustainability, and climate change news.
-- **[Explore Environment News](/environment/)**
 
 ## Why Choose Us?
 
@@ -51,4 +44,4 @@ Explore our site and stay updated with the most relevant news and insights!
 
 ---
 
-*Feel free to reach out through our [Contact Page](/contact.html) if you have any questions or suggestions.*
+*Feel free to reach out through our [Contact Page](/contact.md) if you have any questions or suggestions.*
