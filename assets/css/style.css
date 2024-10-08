@@ -115,3 +115,26 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.footer-links {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    align-items: center; /* Center align items */
+    margin: 20px 0;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: center; /* Center the links */
+    flex-wrap: wrap; /* Allow wrapping to next line if needed */
+    margin: 10px 0; /* Space between rows */
+}
+
+.footer-row a {
+    margin: 0 15px; /* Space between links */
+    text-decoration: none; /* Remove underline from links */
+    color: #000; /* Link color */
+}
+
+.footer-row a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
