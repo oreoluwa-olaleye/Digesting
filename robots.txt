@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /private/
+Disallow: /tmp/
+Allow: /
+
+Sitemap: https://digest.i.ng/sitemap.xml
