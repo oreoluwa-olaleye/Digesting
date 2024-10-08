@@ -3,7 +3,7 @@ layout: default
 title: "Home"
 ---
 
-# Discover the Latest Insights and Summaries
+## Discover the Latest Insights and Summaries
 
 At **digest.i.ng**, we curate insights and provide concise summaries of the latest news, helping you stay informed with ease and accuracy. Our mission is to bring you the most relevant news articles and trends, so you can quickly catch up on what matters.
 
