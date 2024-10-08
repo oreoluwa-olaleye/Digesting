@@ -117,24 +117,21 @@ img {
 }
 .footer-links {
     display: flex;
-    flex-direction: column; /* Stack rows vertically */
-    align-items: center; /* Center align items */
+    justify-content: space-around; /* Space columns evenly */
     margin: 20px 0;
 }
 
-.footer-row {
+.footer-column {
     display: flex;
-    justify-content: center; /* Center the links */
-    flex-wrap: wrap; /* Allow wrapping to next line if needed */
-    margin: 10px 0; /* Space between rows */
+    flex-direction: column; /* Stack links vertically */
 }
 
-.footer-row a {
-    margin: 0 15px; /* Space between links */
+.footer-column a {
+    margin: 5px 0; /* Space between links */
     text-decoration: none; /* Remove underline from links */
     color: #000; /* Link color */
 }
 
-.footer-row a:hover {
+.footer-column a:hover {
     text-decoration: underline; /* Underline on hover */
 }
