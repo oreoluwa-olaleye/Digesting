@@ -5,7 +5,7 @@ layout: null
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% for page in site.pages %}
     <url>
-      <loc>https://digest.i.ng{{ page.url | replace:'index.html','' }}</loc>
+      <loc>https://digest.i.ng{{ page.url | replace:'.html','' }}</loc>
       <lastmod>{{ page.date | date: "%Y-%m-%d" }}</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
@@ -14,10 +14,21 @@ layout: null
 
   {% for post in site.posts %}
     <url>
-      <loc>https://digest.i.ng{{ post.url }}</loc>
+      <loc>https://digest.i.ng{{ post.url | replace:'.html','' }}</loc>
       <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.8</priority>
     </url>
+  {% endfor %}
+
+  {% for collection in site.collections %}
+    {% for item in collection.docs %}
+      <url>
+        <loc>https://digest.i.ng{{ item.url | replace:'.html','' }}</loc>
+        <lastmod>{{ item.date | date: "%Y-%m-%d" }}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+      </url>
+    {% endfor %}
   {% endfor %}
 </urlset>
