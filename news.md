@@ -8,7 +8,7 @@ layout: default
 Here you can find the latest news articles categorized specifically for your convenience. Our news section provides timely updates and insights.
 
 <div id="news-container">
-    {% assign news_posts = site.posts | where: "categories", "news" | sort: "date" | reverse %}
+    {% assign news_posts = site.posts | where: "category", "news" | sort: "date" | reverse %}
     {% for post in news_posts limit: 10 %}
         <div class="news-item">
             <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
@@ -34,7 +34,7 @@ Here you can find the latest news articles categorized specifically for your con
             newsItem.className = 'news-item';
             newsItem.innerHTML = `
                 <h3><a href="${post.url}">${post.title}</a></h3>
-                <p><strong>Published on:</strong> ${post.date}</p>
+                <p><strong>Published on:</strong> ${new Date(post.date).toLocaleDateString()}</p>
                 <p><strong>Summary:</strong> ${post.excerpt}</p>
             `;
             container.appendChild(newsItem);
